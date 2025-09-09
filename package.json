@@ -7,12 +7,12 @@
     "webapp"
   ],
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-}
-,
+    "dev": "pnpm --filter webapp dev",
+    "build": "pnpm --filter webapp build",
+    "start": "pnpm --filter webapp start"
+  },
   "engines": {
-  "node": "20.x"
-}
+    "node": "20.x",
+    "pnpm": "8.x"
+  }
 }
