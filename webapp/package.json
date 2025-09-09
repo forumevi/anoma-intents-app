@@ -19,9 +19,7 @@
     "@types/node": "^20.5.1",
     "@netlify/plugin-nextjs": "^6.0.0"
   },
-  "engines": {
-    "node": "20.x"
-  }
+
 }
 
 
