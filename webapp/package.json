@@ -1,22 +1,17 @@
 {
-  "name": "webapp",
+  "name": "anoma-intents-app",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "webapp"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "tailwind:init": "tailwindcss init -p"
+    "dev": "pnpm --filter webapp dev",
+    "build": "pnpm --filter webapp build",
+    "start": "pnpm --filter webapp start"
   },
-  "dependencies": {
-    "next": "14.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13",
-    "typescript": "^5.2.2"
-  }
+  "engines": {
+  "node": "20.x"
+}
 }
