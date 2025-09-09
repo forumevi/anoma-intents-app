@@ -3,19 +3,12 @@
   "builds": [
     {
       "src": "webapp/package.json",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
+      "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/webapp/$1"
-    }
-  ]
+  "buildCommand": "npx pnpm@8 install && pnpm --filter webapp build"
 }
+
 
 
 
