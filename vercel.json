@@ -1,9 +1,22 @@
 {
   "version": 2,
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm run build",
-  "outputDirectory": ".next"
+  "builds": [
+    {
+      "src": "webapp/package.json",
+      "use": "@vercel/node",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/webapp/$1"
+    }
+  ]
 }
+
 
 
 
