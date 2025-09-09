@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rootDirectory": "webapp",
+  "buildCommand": "pnpm run build",
+  "installCommand": "pnpm install",
+  "outputDirectory": ".next"
+}
