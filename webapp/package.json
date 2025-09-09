@@ -15,8 +15,8 @@
   "engines": {
     "node": "20.x",
     "pnpm": "8.x"
-  }"devDependencies": {
-  "pnpm": "^8.0.0"
-}
-
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0"
+  }
 }
