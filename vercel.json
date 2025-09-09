@@ -1,7 +1,8 @@
 {
   "version": 2,
+  "installCommand": "npm install -g pnpm@8 && pnpm install",
   "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install",
   "outputDirectory": ".next"
 }
+
 
