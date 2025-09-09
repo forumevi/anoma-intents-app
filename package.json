@@ -1,0 +1,14 @@
+{
+  "name": "anoma-intents-app",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "webapp"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter webapp dev",
+    "build": "pnpm --filter webapp build",
+    "start": "pnpm --filter webapp start"
+  }
+}

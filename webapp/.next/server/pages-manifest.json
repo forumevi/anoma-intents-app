@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/intent-composer": "pages/intent-composer.js",
+  "/": "pages/index.js"
+}
