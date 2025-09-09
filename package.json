@@ -12,7 +12,7 @@
     "start": "pnpm --filter webapp start"
   },
   "engines": {
-    "node": "18.x",
+    "node": "20.x",
     "pnpm": "8.x"
   }
 }
