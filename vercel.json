@@ -1,13 +1,16 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [
     {
       "src": "webapp/package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/next"
     }
   ],
-  "buildCommand": "npx pnpm@8 install && pnpm --filter webapp build"
+  "routes": [
+    { "src": "/(.*)", "dest": "/webapp/$1" }
+  ]
 }
+
 
 
 
